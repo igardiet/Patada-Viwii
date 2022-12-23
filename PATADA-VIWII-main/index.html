@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <title>Patada Viwii</title>
+</head>
+<body>
+    <main>
+<!--DESKTOP 1-->
+        <section class="desktop-1">
+            <div class="patada-viwii-padre">
+                <div class="patada-viwii">
+                    <h1>PATADA VIWII</h1>
+                </div>
+            </div>
+            <div class="comenzar-partida-padre">
+                <div class="comenzar-partida">
+                    <h2>COMENZAR PARTIDA</h2>
+                </div>
+            </div>
+        </section>
+<!--DESKTOP 2-->
+        <section class="desktop-2">
+            <form class="formulario-jugar">
+                <div class="box-padre">
+                    <div class="box">
+                        <div class="quien-eres">
+                            <label class="label-not" for="quienEres"><h3>¿QUIÉN ERES? (APODO)</h3></label>
+                            <input type="text" id="quienEres" name="quien-eres" required>
+                        </div>
+                        <div class="dificultad">
+                            <h3>DIFICULTAD</h3>
+                            <input class="easy-dif" type="radio" id="facil" name="text" value="text" required>
+                            <label for="facil">Fácil</label>
+                            <input class="easy-dif" type="radio" id="dificil" name="text" value="text" required> 
+                            <label for="dificil">Difícil</label>
+                        </div>
+                        <div class="patear-cara">
+                            <h3>¿A QUIÉN TE GUSTARÍA PATEAR?</h3>
+                            <input class="select-who" type="radio" id="inaki" name="text2" value="text" required>
+                            <label for="inaki">Iñaki</label>
+                            <input class="select-who" type="radio" id="wilson" name="text2" value="text" required>
+                            <label for="wilson">Wilson</label>
+                            <input class="select-who" type="radio" id="victor" name="text2" value="text" required>
+                            <label for="victor">Victor</label>
+                            
+                            <div>
+                                <img class="fotos" src="assets/inaki.png" alt="Iñaki">
+                                <img class="fotos" src="assets/wilson.png" alt="Wilson">
+                                <img class="fotos" src="assets/victor.png" alt="Victor">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-div">
+                    <button class="submit-1" id="submitOne" type="submit" >Jugar</button>
+                </div>
+            </form>
+        </section>
+<!--DESKTOP 3-->
+    <section class="playing">
+        <div class="complet">
+            <img class="box1" src="assets(victor)/box1.png" alt="escondite">
+            <img class="box2" src="assets(victor)/box1.png" alt="escondite">
+            <img class="box3" src="assets(victor)/box1.png" alt="escondite">
+            <img class="box4" src="assets(victor)/box1.png" alt="escondite">
+            <img class="box5" src="assets(victor)/box1.png" alt="escondite">
+            <img class="box6" src="assets(victor)/box1.png" alt="escondite">
+            <div class="currently-playing">
+                <h2>Jugador</h2>
+                <p class="current-user"></p>
+            </div>
+            <img class="inaki1 img-ease inaki-win" src="assets(victor)/inaki.png" alt="inaki1">
+            <img class="inaki2 img-ease inaki-win" src="assets(victor)/inaki.png" alt="inaki2">
+            <img class="inaki3 img-ease inaki-win" src="assets(victor)/inaki.png" alt="inaki3">
+            <img class="inaki4 img-ease inaki-win" src="assets(victor)/inaki.png" alt="inaki4">
+            <img class="inaki5 img-ease inaki-win" src="assets(victor)/inaki.png" alt="inaki5">
+            <img class="inaki6 img-ease inaki-win" src="assets(victor)/inaki.png" alt="inaki6">
+            <img class="victor1 img-ease victor-win" src="assets(victor)/victor.png" alt="victor1">
+            <img class="victor2 img-ease victor-win" src="assets(victor)/victor.png" alt="victor2">
+            <img class="victor3 img-ease victor-win" src="assets(victor)/victor.png" alt="victor3">
+            <img class="victor4 img-ease victor-win" src="assets(victor)/victor.png" alt="victor4">
+            <img class="victor5 img-ease victor-win" src="assets(victor)/victor.png" alt="victor5">
+            <img class="victor6 img-ease victor-win" src="assets(victor)/victor.png" alt="victor6">
+            <img class="wilson1 img-ease wilson-win" src="assets(victor)/wilson.png" alt="wilson1">
+            <img class="wilson2 img-ease wilson-win" src="assets(victor)/wilson.png" alt="wilson2">
+            <img class="wilson3 img-ease wilson-win" src="assets(victor)/wilson.png" alt="wilson3">
+            <img class="wilson4 img-ease wilson-win" src="assets(victor)/wilson.png" alt="wilson4">
+            <img class="wilson5 img-ease wilson-win" src="assets(victor)/wilson.png" alt="wilson5">
+            <img class="wilson6 img-ease wilson-win" src="assets(victor)/wilson.png" alt="wilson6">
+
+            <img class="fondo" src="assets(victor)/play-background.png" alt="fondo-juego">
+            
+            
+            <div class="get-ready">
+                <h2>A patear en...</h2>
+                <p class="countdown"></p>
+            </div>
+        
+        </div>
+
+<!--DESKTOP 5-->
+    </section>
+    <section class="who-face-pattle">
+        <div class="who-box">
+            <h2>¿A quién te gustaría patearle la cara ahora?</h2>
+            <div>
+                <form class="volver-formulario-jugar">
+                    <div class="flex-box">
+                        <input type="radio" id="returnInaki" name="characters" value="inaki">
+                        <label for="returnInaki"> Iñaki</label><br>
+                        <input type="radio" id="returnWilson" name="characters" value="wilson">
+                        <label for="returnWilson"> Wilson</label><br>
+                        <input type="radio" id="returnVictor" name="characters" value="victor">
+                        <label for="returnVictor"> Victor</label><br><br>
+                    </div>
+                    <div>
+                        <img class="img-people img-iñaki" src="assets(victor)/inaki.png" alt="Foto Iñaki" />
+                        <img class="img-people img-Wilson" src="assets(victor)/wilson.png" alt="Foto Wilson" />
+                        <img class="img-people mg-victor" src="assets(victor)/victor.png" alt="Foto Victor"/>
+                    </div><br>
+                    <button class="play-button" type="submit" value="Jugar">Jugar</button>
+                  </form>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!--DESKTOP 4-->
+    <section class="lose">
+        <div class="wrong_face">
+            <h2>OH LO SIENTO, TE HAS EQUIVOCADO DE CARA</h2>
+            <h3>¿Qué quiéres hacer ahora?</h3>
+            <div>
+                <button class="again-lose">Patear otra cara</button>
+                <button class="return-lose">Patear la misma cara</button>
+        </div>
+        
+    </section>
+
+    <!--DESKTOP 6-->
+    <section class="winner">
+        <div class="wrong_face_winner">
+            <h2>¡¡WOW!! ¡¡ENHORABUENA!!</h2>
+            <h3>Eres un magnífico pateador de caras</h3>
+            <p>Tu tiempo para patear la cara de <span class="cara-seleccionada"></span> ha sido de:</p>
+            <div class="time_up">
+                <p class="record-segundos"></p>
+            </div>
+            <div>
+                <button class="again">Quiero patear otra cara</button>
+                <button class="return">Volver a intentarlo</button>
+            </div>
+            
+        </div>
+
+        <div class="champions">
+            <h2>Ranking</h2>
+            <img class="oro" src="assets/champions/medalla_oro.png">
+            <p class="record-screen1-bueno"></p>
+            <p class="times time-record-1-bueno" id="caso1"></p>
+
+            <img class="plata" src="assets/champions/medalla_plata.png">
+            <p class="record-screen2"></p>
+            <p class="times time-record-2"></p>
+
+            <img class="bronce" src="assets/champions/medalla_bronce.png">
+            <p class="record-screen3"></p>
+            <p class="times time-record-3"></p>
+
+            <img class="cuarto" src="assets/champions/4º.png">
+            <p class="record-screen4"></p>
+            <p class="times time-record-4"></p>
+
+            <img class="quinto" src="assets/champions/5º.png">
+            <p class="record-screen5"></p>
+            <p class="times time-record-5"></p>
+        </div>
+            
+        
+
+    </section>
+
+    </main>
+    
+</body>
+    
+</html>
